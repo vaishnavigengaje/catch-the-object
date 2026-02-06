@@ -14,20 +14,20 @@ const missSpan = document.getElementById("miss");
 // Game Images
 // -------------------
 const bgImage = new Image();
-bgImage.src = "assets/wood.png";
+bgImage.src = "images/wood.png";
 
 const basketImg = new Image();
-basketImg.src = "assets/basket (2).png";
+basketImg.src = "images/basket (2).png";
 
 const objectImage = new Image();
-objectImage.src = "assets/APPLE (2).png";
+objectImage.src = "images/APPLE (2).png";
 
 // -------------------
 // Sound Effects
 // -------------------
-const catchSound = new Audio("assets/catching sound.wav");
-const missSound = new Audio("assets/miss.wav");
-const gameOverSound = new Audio("assets/over.wav");
+const catchSound = new Audio("images/catching sound.wav");
+const missSound = new Audio("images/miss.wav");
+const gameOverSound = new Audio("images/over.wav");
 
 catchSound.volume = 0.7;
 missSound.volume = 0.7;
@@ -185,3 +185,4 @@ function endGame() {
   gameOverScreen.style.display = "block";
   finalScore.textContent = "Your Score: " + score + " | Level: " + level;
 }
+
